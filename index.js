@@ -2,7 +2,7 @@ const express = require("express");
 const logger = require("./log/logger.log");
 const { getConnection, disconnectDB } = require("./dbConnection");
 const app = express();
-const port = 3000;
+const port = process.env.APP_PORT;
 
 const userRouter = require("./route/user.route");
 const authRouter = require("./route/auth.route");

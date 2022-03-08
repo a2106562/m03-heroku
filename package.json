@@ -6,7 +6,7 @@
   "author": "David Fernandez Retamal <a2106562@institutmontilivi.cat>",
   "scripts": {
     "dev": "JWT_SECRET=$(openssl rand -base64 512) ENVIRONMENT=\"develop\" nodemon index.js",
-    "prod": "JWT_SECRET=$(openssl rand -base64 512) ENVIRONMENT=\"production\" node index.js"
+    "start": "JWT_SECRET=$(openssl rand -base64 512) ENVIRONMENT=\"production\" node index.js"
   },
   "license": "MIT",
   "dependencies": {
